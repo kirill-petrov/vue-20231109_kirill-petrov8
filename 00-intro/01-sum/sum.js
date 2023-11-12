@@ -5,6 +5,7 @@
  * @param {number} b - второе целое
  * @return {number} сумма чисел a и b
  */
+
 export function sum (a, b) {
   return a + b
 }
