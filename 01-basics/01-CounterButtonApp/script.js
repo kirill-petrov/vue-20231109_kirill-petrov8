@@ -1,15 +1,10 @@
 import { createApp } from './vendor/vue.esm-browser.js';
 
-createApp({
-  data() {
-    return {
-      count: 0,
-    };
-  },
+const app = createApp({
+  data: () => ({
+    counter: 0
+  }),
+  template: `<button type="button" @click="counter += 1">{{ counter }}</button>`
+})
 
-  methods: {
-    increment() {
-      this.count += 1;
-    },
-  },
-}).mount('#app');
+app.mount('#app')
